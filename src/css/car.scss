@@ -76,7 +76,12 @@ main{
                 color: #666;
                 text-align: center;
                 line-height: 400px;
-                background:#f7f7f7 url("/imgs/buyno_shop.jpg") no-repeat left center;    
+                background:#f7f7f7 url("/imgs/buyno_shop.jpg") no-repeat left center;
+                a{
+                    color:#a01f23;
+                    font-size: 18px;
+                    text-decoration: underline;
+                }    
             }
             ul{
                 border-bottom: 1px solid #e7e7e7;

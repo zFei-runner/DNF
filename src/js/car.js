@@ -27,7 +27,8 @@ require(["config"], () => {
                 });
             }
             load() {
-                if (this.data) {
+                
+                if (this.data && this.data.length!=0) {
                     this.noShop.hide();
                     this.render();
                 } else {this.noShop.show();}        
@@ -82,15 +83,16 @@ require(["config"], () => {
                             localStorage.setItem("car", JSON.stringify(newDate));
                             _this.data=newDate;//将修改之后的cookie值赋值给_this.data
                             this.parentNode.parentNode.remove();
-                            _this.calcAll(newDate); 
+                            _this.calcAll(newDate);
+                            //判断购物车是否为空
+                            _this.isNoShop();
                         }
                     }
-                    //判断购物车是否为空
-                    // _this.isNoShop();
+                    
                     
 
 
-
+                
                 })
                 //选择商品购买
                 this.car_container.on("click", "b", function () {
@@ -107,6 +109,14 @@ require(["config"], () => {
                         _this.checkAll();
                     }
                 })
+            }
+            isNoShop () {
+                if(this.data.length==0){
+                    this.noShop.show();
+                    this.cAll.removeClass("checkAll");
+                }else{
+                    this.noShop.hide();
+                }
             }
             //全选
             checkAll () {
@@ -166,6 +176,13 @@ require(["config"], () => {
                 buyNum.html(allNum);
                 allPrice.html(allMoney);
                 this.freePost(allMoney);
+                if(allNum==0){
+                    $("#noOkBuy").show();
+                    $("#okBuy").hide();
+                }else{
+                    $("#noOkBuy").hide();
+                    $("#okBuy").show();
+                }
             }
             //获取当前被点击对象所在对象的id
             getId(li) {
