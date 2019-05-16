@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品列表-DNF周边商城</title>
+    <link rel="shortcut icon" href="/imgs/favicon.ico" />
+    <link rel="stylesheet" href="/css/list.css">
+</head>
+<body>
+    <header id="header_container"></header>
+    <main class="BG_bj">
+        <div class="wrap_lists">
+            <div class="list_left">
+                <div class="top">
+                    <h3>猜您喜欢</h3>
+                    <div class="hot">
+                        <div class="hot01"></div>
+                        <div class="hot02"></div>
+                    </div>
+                </div>
+                <div class="bot">
+                   <div class="list_jilu">勇士脚印</div>
+                   <ul class="bot_list_detail">
+                       <!-- 从后台拿取数据渲染 -->
+                       <li class="list01 bor"><a href="javascript:;"></a></li>
+                       <li class="list02 bor"><a href="javascript:;"></a></li>
+                       <li class="list03 bor"><a href="javascript:;"></a></li>
+                       <li class="list04 bor"><a href="javascript:;"></a></li>
+                       <li class="list05 bor"><a href="javascript:;"></a></li>
+                       <li class="list06 bor"><a href="javascript:;"></a></li>
+                   </ul>
+                </div>
+            </div>
+            <div class="list_right">
+                <div class="list_navbar">
+                    <div class="list_nav" id="wrap_list_nav">
+                        <h5>周边类目</h5>
+                        <a href="javascript:;" class="listhover list_all">全部商品</a>
+                        <span id="libao">
+                            <a href="javascript:;">礼包收藏</a>
+                            <div class="self_detail" ></div>
+                        </span>
+                        <span id="moxing">
+                            <a href="javascript:;">手办模型</a>
+                            <div class="self_detail" ></div>
+                        </span>
+                        <span id="shuma">
+                            <a href="javascript:;">数码电子</a>
+                            <div class="self_detail" ></div>
+                        </span>
+                        <span id="fushiriyong">
+                            <a href="javascript:;">服饰日用</a>
+                            <div class="self_detail" ></div>
+                        </span>
+                    </div>                    
+                </div>
+                <div class="list_shopbar">
+                    <div class="list_shopbar_top">
+                        <div class="left" id="shopbar_nav">
+                            <a href="javascript:;" id="renqi">人气</a>
+                            <a href="javascript:;">热销</a>
+                            <a href="javascript:;">新品</a>
+                            <a href="javascript:;">价格</a>
+                        </div>
+                        <div class="list_toppage"></div>
+                    </div>
+                    <ul class="shop_all" id="list_shop_detail"></ul>
+                    <script type="text/html" id="shop_template">
+                        {{each list item}}
+                        <li>
+                            <a href="/html/detail.html?id={{item.id}}"><img src="{{item.images}}" alt="" class="shop_img" /></a>
+                            <a href="/html/detail.html?id={{item.id}}" class="title">{{item.title}}</a>
+                            <p class="shop_price">
+                                <span class="price">{{item.price}}元</span>
+                                <del class="outer">{{item.del}}</del>
+                                <span class="dianping"><b>{{item.pers}}</b>人点评</span>
+                            </p>
+                        </li>
+                        {{/each}}
+                    </script>
+                    <!-- 分页 -->
+                    <div class="another_pag">分页处</div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer id="footer_container"></footer>
+    <div id="articl"></div>
+
+    <script src="/libs/requirejs/require.min.js" data-main="/js/list.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,346 @@
+@import "module/header";
+@import "module/footer";
+@import "module/articl";
+
+main{
+    overflow: hidden;
+    background:url("/imgs/index_02.jpg") no-repeat -250px -20px,url("/imgs/index_03.jpg") no-repeat -330px 181px,url("/imgs/index_04.jpg") no-repeat -330px 382px;
+    .buyshop{
+        width: 1120px;
+        margin:10px auto 0;
+        background-color: #fff;
+        .buyshop_title{
+            height: 46px;
+            background: #e7e7e7;
+            color: #000;
+            .buyli{
+                overflow: hidden;
+                
+                font-weight: bolder;
+                li{
+                    float: left;
+                    font-size: 14px;
+                    line-height: 46px;
+                    text-align: center;
+                    text-indent:20px;
+                    b{
+                        float:left;
+                        width: 16px;
+                        height: 16px;
+                        margin-top:15px;
+                        margin-right: 5px;
+                        cursor: pointer;
+                        background:url("/imgs/buy_inphui.jpg") no-repeat center center;
+                        margin-left:10px;
+                    }
+                    div{
+                        float:left;
+                        font-size: 14px;
+                        text-indent: 0px;
+                    }
+                    .noCheckAll{
+                        float: left;
+                        width: 16px;
+                        height: 16px;
+                        margin-top:15px;
+                        margin-left:10px;
+                        margin-right: 5px;
+                        cursor: pointer;
+                        background:url("/imgs/buy_inphui.jpg") no-repeat center center;
+                    }
+                    .checkAll{
+                        background-image:url("/imgs/buy_inphoer.jpg");
+                    }
+                }
+                .li_sp{
+                    width: 420px;
+                    text-align: left;
+                }
+                .li_dj,.li_sl{
+                    width: 180px;
+                }
+                .li_xj{
+                    width: 110px;
+                }
+                .li_cz{
+                    width: 150px;
+                }
+            }
+        }
+        .select_content{
+            #noShop{
+                display: none;
+                width: 100%;
+                height: 400px;
+                font-size: 18px;
+                color: #666;
+                text-align: center;
+                line-height: 400px;
+                background:#f7f7f7 url("/imgs/buyno_shop.jpg") no-repeat left center;    
+            }
+            ul{
+                border-bottom: 1px solid #e7e7e7;
+                height: 128px;
+                li{
+                    height: 128px;
+                    float: left;
+                    font-size: 14px;
+                    line-height: 128px;
+                    text-align: center;
+                    text-indent:20px;
+                }
+                .s{
+                    display: inline-block;
+                    margin-top: 55px;
+                    width: 16px;
+                    height: 16px;
+                    background:url("/imgs/buy_inphoer.jpg") no-repeat center center;
+                    cursor: pointer;
+                    
+                }
+                .bumai{
+                    background:url("/imgs/buy_inphui.jpg") no-repeat center center;
+                }
+                .li_sp{
+                    width: 420px;
+                    text-align: left;
+                    .sLogo{
+                        float:left;
+                        line-height: 0px;
+                        margin-top:8px;
+                        img{
+                            width: 88px;
+                            height: 112px;   
+                        }
+                    }
+                    .product_content{
+                        float:left;
+                        text-indent:15px;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        a{
+                            display: block;
+                            line-height: 0px;
+                            color: #000;
+                            font-size: 14px;
+                            
+                        }
+                        a:hover{
+                            text-decoration: underline;
+                        }
+                        span{
+                            display: block;
+                            color: #555;
+                            margin-top:20px;
+                            line-height: 0;
+                            i{
+                                font-style: normal;
+                            }
+                        }
+
+                    }
+                }
+                .li_dj{
+                    width: 180px;
+                    padding-top:53px;
+                    box-sizing: border-box;
+                    line-height:normal;
+                    p{
+                        margin-bottom: 3px;
+                    }
+                    .xianjia{
+                        font-size: 14px;
+                        color:#000;
+                        i{
+                            font-style: normal;
+                            font-size: 14px;
+                        }
+                    }
+                    .yuanjia{
+                        color:#555;
+                        text-decoration: line-through;
+                        i{
+                            font-style: normal;
+                        }
+                    }
+                }
+                .li_sl{
+                    width: 180px;
+                    padding-top:53px;
+                    box-sizing: border-box;
+                    line-height:normal;
+                    div{
+                        border:1px solid #ccc;
+                        overflow: hidden;
+                        display: inline-block;
+                        span{
+                            float:left;
+                            height: 26px;
+                            width: 20px;
+                            padding:0;
+                            cursor: pointer;
+                        }
+                        
+                        .this_num{
+                            float:left;
+                            border:none;
+                            height: 26px;
+                            width: 46px;
+                            text-align: center;
+                        }
+                        .reduceNum{
+                            background:url("/imgs/buy_jian.jpg") no-repeat center center;
+                        }
+                        .addNum{
+                            background:url("/imgs/buy_jia.jpg") no-repeat center center;
+                        }
+                    }
+                }
+                .li_xj{
+                    width: 110px;
+                    padding-top:53px;
+                    box-sizing: border-box;
+                    line-height:normal;
+                    p{
+                        color:#a01f23;
+                        font-size: 14px;
+                        i{
+                            font-style: normal;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .li_cz{
+                    width: 150px;
+                    a{
+                        margin-left:5px;
+                        color:#666;
+                    }
+                    a:hover{
+                        text-decoration: underline;
+                    }
+                }
+                .li_input{
+                    width: 59px;
+                    position: relative;
+                    span{
+                        position: absolute;
+                        left:0;
+                        top:0;
+                        right:0;
+                        bottom:0;
+                        margin:auto;
+                        width: 16px;
+                        height: 16px;
+                        line-height: 128px;
+                        background-color: red;
+                    }
+                }
+            }
+        }
+        .continue_shop{
+            border-bottom: 1px solid #e7e7e7;
+            height: 46px;
+            line-height: 46px;
+            text-align: right;
+            color: #666;
+            position: relative;
+            padding-right: 20px;
+            a{
+                float:left;
+                height: 100%;
+                color:#a01f23;
+                font-size: 14px;
+                margin-left:20px;
+                text-decoration: underline;
+            }
+        }
+        .jiesuan{
+            height: 44px;
+            padding-top: 22px;
+            background: #e7e7e7;
+            position: relative;
+            margin-top: 20px;
+            p{
+                display: inline-block;
+                height: 22px;
+                line-height: 22px;
+                font-size: 14px;
+                color: #666;
+                margin-left: 20px;
+                .bumianyunfei{
+                    position: relative;
+                    top:5px;
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    background:url("/imgs/buy_inphui.jpg") no-repeat center center;
+                }
+                .mianyunfei{
+                    background-image:url("/imgs/buy_inphoer.jpg");
+                }
+                span{
+                    font-size: 14px;
+                }
+                a{
+                    color: #a01f23;
+                    font-size: 14px;
+                    padding-left: 10px;
+                    text-decoration: underline;
+                }
+            }
+            .play{
+                float:right;
+                height:100%;
+                .go{
+                    width: 220px;
+                    height: 66px;
+                    line-height: 66px;
+                    color: #fff;
+                    display: block;
+                    background: #666;
+                    font-size: 24px;
+                    text-align: center;
+                    font-weight: bolder;
+                    float:right;
+                    position: relative;
+                    right: 0px;
+                    top: -22px;
+                    cursor: default;
+                }
+                .go:hover{
+                    text-decoration: underline;
+                }
+                .noHaveChecked{
+                    display: none;
+                }
+                .haveChecked{
+                    background:#a01f23;
+                    display: block;
+                }
+                .allPrice{
+                    display: block;
+                    width: auto;
+                    padding-left: 25px;
+                    float: left;
+                    color:#a01f23;
+                    font-size: 14px;
+                    font-weight: bold;
+                    margin-right: 20px;
+                }
+                .buy_num{
+                    float:left;
+                    height: 19px;
+                    line-height: 21px;
+                    color:#a01f23;
+                    b{
+                        margin-left:6px;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+}

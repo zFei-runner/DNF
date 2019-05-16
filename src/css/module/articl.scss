@@ -1,0 +1,82 @@
+.right_xian{
+    width: 6px;
+    background:#282725;
+    height: 100%;
+    position:fixed;
+    right:0;
+    top:0;
+}
+.user_inform{
+    width: 46px;
+    height: 321px;
+    background:#282725;
+    position: fixed;
+    right:0;
+    top:50%;
+    bottom:50%;
+    margin-top:-160px;
+    a{
+        display: block;
+    }
+    .ren{
+        width: 46px;
+        height: 47px;
+        background:url("../../imgs/right.png") no-repeat -6px -116px;
+    }
+    .ren:hover{
+        background-position-x: -72px;
+    }
+    .key{
+        width: 46px;
+        height: 47px;
+        background:url("../../imgs/right.png") no-repeat -6px -162px;
+    }
+    .key:hover{
+        background-position-x: -72px;
+    }
+    .shopCar{
+        width: 46px;
+        height: 130px;
+        cursor: pointer;
+        text-align: center;
+        
+        color:#a01f23;
+        font-weight: bolder;
+        background:url("../../imgs/right.png") -6px -212px no-repeat #a01f23;
+        position: relative;
+        span{
+            font-size: 16px;
+            position: absolute;
+            bottom:14px;
+            left:12px;
+        }
+    }
+    .shopCar:hover{
+        background-color: #b6292e;    
+    }
+    .qqkefu{
+        width: 46px;
+        height: 98px;
+        background:url("../../imgs/right.png") no-repeat -6px -348px;
+    }
+    .qqkefu:hover{
+        background-position-x: -72px;
+    }
+}
+.return_top{
+    width: 46px;
+    height: 46px;
+    position: fixed;
+    right:0;
+    bottom:0;
+    a{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        transition: opacity 1s;
+        background:url("../../imgs/right.png") no-repeat -6px -444px #202020;
+    }
+    a:hover{
+        background-position-x: -72px;
+    }
+} 

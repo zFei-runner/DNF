@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车-DNF周边商城</title>
+    <link rel="shortcut icon" href="/imgs/favicon.ico" />
+    <link rel="stylesheet" href="/css/car.css" />
+</head>
+<body>
+    <header id="header_container"></header>
+    <main>
+        <div class="buyshop">
+            <div class="buyshop_title">
+                <ul class="buyli">
+                    <li class="li_input">
+                        <span class="noCheckAll" id="cAll"></span>
+                        <div>全选</div>
+                    </li>
+                    <li class="li_sp">商品</li>
+                    <li class="li_dj">单价(元)</li>
+                    <li class="li_sl">数量</li>
+                    <li class="li_xj">小计</li>
+                    <li class="li_cz">操作</li>
+                </ul>
+            </div>
+            <div class="select_content" id="car-container">
+                <div id="noShop">〒_〒 购物车暂无商品！</div>
+            </div>
+            <script type="text/html" id="car-template">
+                {{each list item}}
+                <ul class="shop_list">
+                    <li class="li_input">
+                        <b class="mai s checked"></b>
+                    </li>
+                    <li class="li_sp">
+                        <a href="/html/detail.html?id={{item.id}}" class="sLogo"><img src="{{item.imgs[0]}}" alt=""></a>
+                        <div class="product_content">
+                            <a href="/html/detail.html?id={{item.id}}">{{item.lihe}}</a>
+                            <span>颜色：<i>彩色</i></span>
+                            <span>尺寸：<i>均码</i></span>
+                        </div>
+                    </li>
+                    <li class="li_dj">
+                        <p class="xianjia">￥<i>{{item.priceNum}}</i></p>
+                        <p class="yuanjia">原价<i>538</i></p>
+                    </li>
+                    <li class="li_sl">
+                        <div>
+                            <span class="reduceNum"></span>
+                            <input type="text" value="{{item.num}}" class="this_num"/>
+                            <span class="addNum"></span>
+                        </div>
+                    </li>
+                    <li class="li_xj">
+                        <p>￥<i class="xiaoji">{{item.num*item.priceNum}}</i></p>
+                    </li>
+                    <li class="li_cz">
+                        <a href="javascript:;">移入收藏夹</a><a href="javascript:;" class="del">删除</a>
+                    </li>
+                </ul>
+                {{/each}}
+
+            </script>     
+           
+            <div class="continue_shop">
+                <a href="/html/list.html">继续购物</a>
+                <span>承诺：赠送游戏道具 / 7天无理由退换货 / 100%官方正品</span>
+            </div>
+            <div class="jiesuan">
+                <p>
+                    <span class="bumianyunfei free"></span>
+                    <span class="con">全场购物满900元包邮</span>
+                    <a href="javascript:;">查看凑单商品</a>
+                </p>
+                <div class="play">
+                    <span class="buy_num">数量:<b id="buyNum">0</b></span>
+                    <span class="allPrice">商品金额：￥<b id="all-price">0.00</b></span>
+                    <a href="javascript:;" id="noOkBuy" class="noHaveChecked go">去结算</a>
+                    <a href="javascript:;" id="okBuy" class="haveChecked go">去结算</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer_container"></footer>    
+    <div id="articl"></div>
+
+    <script src="/libs/requirejs/require.min.js" data-main="/js/car.js"></script>
+</body>
+</html>

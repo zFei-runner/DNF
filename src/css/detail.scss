@@ -1,0 +1,300 @@
+@import "module/header";
+@import "module/footer";
+@import "module/articl";
+
+
+main{
+    font-size: 12px;
+    background:url("/imgs/index_02.jpg") no-repeat -330px -20px,url("/imgs/index_03.jpg") no-repeat -330px 181px,url("/imgs/index_04.jpg") no-repeat -330px 382px;
+    .wrap_sNav{
+        width: 1120px;
+        margin:0 auto;
+       
+        .top_nav{
+            height: 44px;
+            font-weight: bolder;
+            margin-bottom: 10px;
+            background:url("/imgs/show_bj.png") repeat-y center 0px;
+            a{
+                float:left;
+                height: 100%;
+                width: 100px;
+                color:#333;
+                font-size: 14px;
+                text-align: center;
+                line-height: 44px;
+            }
+            a:hover{
+                text-decoration: underline;
+                background:#e0e0e0;
+            }
+        }
+        #detail_show{
+            overflow: hidden;
+            .left_img{
+                float:left;
+                position: relative;
+                height: 658px;
+                width: 538px;
+                background-color: #f0f0f0 ;
+                .top_img{
+                    width: 538px;
+                    height: 538px;
+                    background-color: pink;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .wrap_sImg{
+                    position: absolute;
+                    bottom: 42px;
+                    left: 50%;
+                    margin-left: -120px;
+                    ul{
+                        overflow: hidden;
+                        li{
+                            position: relative;
+                            width: 54px;
+                            height: 54px;
+                            float: left;
+                            margin-top:5px;
+                            margin-left: -1px;
+                            border: 1px solid #d8dad9;
+                            background: #fff;
+                            span{
+                                display: none;
+                                width: 54px;
+                                height: 6px;
+                                background:url("/imgs/shopbiao.png") no-repeat -8px 0px;
+                                position: absolute;
+                                z-index: 5;
+                                top:-6px;
+                            }
+                        }
+                       
+                    }
+                }
+            }
+            .right_infor{
+                float: right;
+                height: 658px;
+                width: 582px;
+                background:#fff;
+                .wrap_shuju{
+                    width: 542px;
+                    height: 100%;
+                    margin:0 auto;
+                    overflow: hidden;
+                    // background:pink;
+                    .title{
+                        margin-top: 22px;
+                        line-height: 24px;
+                        display: block;
+                        overflow: hidden;
+                        font-weight: normal;
+                        .lihe{
+                            float:left;
+                            font-size: 24px;
+                        }
+                        .newPro{
+                            float: left;
+                            width: 48px;
+                            text-align: center;
+                            height: 28px;
+                            font-weight: bolder;
+                            color: #FFF;
+                            margin-left: 10px;
+                            background:url("/imgs/new_wen.png") no-repeat center center;
+                        }
+                    }
+                    .xiangq_yx{
+                        height: 102px;
+                        width: inherit;
+                        background: url("/imgs/show_jiage_bj.jpg") 0px 0px no-repeat;
+                        margin-top: 10px;
+                        overflow: hidden;
+                        .now{
+                            height: 24px;
+                            margin-top:12px;
+                            padding-left:20px;
+                            line-height: 24px;
+                             .newPrice{
+                                 line-height: 24px;
+                                 height: 24px;
+                                 i{
+                                    color:#a01f23;
+                                    font-size: 28px;
+                                    font-style:normal;
+                                 }
+                             }
+                        }
+
+                    }
+                    .xiangq_ping{
+                        height: 78px;
+                        border-bottom: 1px #cccccc dotted;
+                        padding-top: 12px;
+                        line-height: 22px;
+                        color: #555;
+                        div{
+                            float:left;
+                            width: 170px;
+                            height: 68px;
+                            text-align: center;
+                        }
+                        .center{
+                            border: {
+                                left:1px #e8e7e7 solid;
+                                right:1px #e8e7e7 solid;
+                            }
+                            a{
+                                color:#ee4727;
+                                font-size: 16px;
+                            }
+                            a:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                        .right{
+                            a{
+                                color:#555;
+                                padding-left:18px;
+                                background:url("/imgs/show_base.png") -14px -94px no-repeat;
+                            }
+                            a:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    .chima{
+                        width: 110px;
+                        height: 30px;
+                        margin-top:40px;
+                        span{
+                            float:left;
+                            height: 100%;
+                            color:#555;
+                            line-height: 30px;
+                            padding-left:20px;
+                        }
+                        .junma{
+                            float:left;
+                            width: 44px;
+                            height: 26px;
+                            text-align: center;
+                            line-height: 26px;
+                            margin-left:18px;
+                            border:2px solid #a01f23;
+                            cursor: pointer;
+                            background: url("/imgs/detail_hover.png") no-repeat 30px 12px;
+                        }
+                    }
+                    .shuliang{
+                        
+                        height: 30px;
+                        margin-top:50px;
+                        span{
+                            float:left;
+                            height: 100%;
+                            color:#555;
+                            line-height: 30px;
+                            padding-left:20px;
+                        }
+                        .addCarNum{
+                            float:left;
+                            width: 86px;
+                            height: 26px;
+                            margin-left:18px;
+                            border:1px solid #ccc;
+                            border-left:none;
+                            span{
+                                float:left;
+                                height: 26px;
+                                width: 20px;
+                                padding:0;
+                                cursor: pointer;
+                            }
+                            #this_num{
+                                float:left;
+                                border:none;
+                                height: 26px;
+                                width: 46px;
+                                text-align: center;
+                            }
+                            #reduceNum{
+                                background:url("/imgs/buy_jian.jpg") no-repeat center center;
+                            }
+                            #addNum{
+                                background:url("/imgs/buy_jia.jpg") no-repeat center center;
+                            }
+                        }
+                    }
+                    .fashou{
+                        color: #a01f23;
+                        font-size: 14px;
+                        padding-left:62px;
+                        margin-top:5px;
+                    }
+                    .addToCar{
+                        margin-top:12px;
+                        height: 48px;
+                        padding-left:60px;
+                        span{
+                            float:left;
+                            width: 158px;
+                            height: 48px;
+                            cursor: pointer;
+                            line-height: 48px;
+                            text-align: center;
+                            font-size: 18px;
+                        }
+                        .lijigoumai{
+                            color: #FFF;
+                            background: #a01f23;
+                            margin-right:10px;
+                        }
+                        .lijigoumai:hover{
+                            background: #b6292e;
+                        }
+                        .addCar{
+                            color:#a01f23;
+                            box-sizing: border-box;
+                            padding-left:30px;
+                            background:url("/imgs/guwuche.jpg") no-repeat center center;
+                        }
+                    }
+                    .zengsong{
+                        color:#a01f23;
+                        text-indent:60px;
+                        margin-top:30px;
+                    }
+                    .shoucang{
+                        border-top:1px dotted #ccc;
+                        width: 502px;
+                        height: 20px;
+                        line-height: 20px;
+                        padding-left: 60px;
+                        padding-top: 10px;
+                        margin-top: 8px;
+                        a{
+                            width: 180px;
+                            text-indent: 22px;
+                            color: #666;
+                            margin-right: 0px;
+                            display: block;
+                            background:url("/imgs/show_base.png") -12px -166px no-repeat;
+                        }
+                        a:hover{
+                            color:#333;
+                            span{
+                                color: #666;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

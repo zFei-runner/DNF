@@ -1,0 +1,224 @@
+@import "module/header";
+@import "module/footer";
+@import "module/articl";
+
+
+#header_container{
+    .wrap_nav{
+        background: #bf040f;
+    }
+}
+.main{
+    position: relative;
+    .main_left{
+        position: absolute;
+        top:0px;
+        left:60px;
+        width: 200px;
+        height: 420px;
+        background: #ef5c27;
+        z-index: 1;
+        .list{
+            width: 100%;
+            height: 100%;
+            li{
+                background: #ef5c27;
+                border-top: 1px solid #e3450c;
+                padding-left: 16px;
+                height: 82px;
+                padding-top: 20px;
+                .a{
+                    font-size: 14px;
+                    color:#fff;
+                    margin-right:10px;
+                }
+                .a:hover{
+                    text-decoration: underline;
+                }
+                h4{
+                    a{
+                        color: #FFF;
+                        font-weight: bolder;
+                        line-height: 42px;
+                        display: inline-block;
+                        text-indent: 22px;
+                        font-size: 16px;
+                        
+                    }
+                    .top_a{
+                        background:url("/imgs/nav_bj.png") no-repeat -6px -95px;
+                    }
+                    .moxing_a{
+                        background:url("/imgs/nav_bj.png") no-repeat -6px -50px;
+                    }
+                    .dianzi_a{
+                        background:url("/imgs/nav_bj.png") no-repeat -6px -6px;
+                    }
+                    a:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            li:hover{
+                background: #e3450c;
+            }
+            .bot{
+                a{
+                    display: block;
+                    color:#ec4828;
+                    background: #ffffff;
+                    width: 164px;
+                    height: 36px;
+                    line-height: 36px;
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: bolder;
+                }
+                a:hover{
+                    background: #fffb80;
+                }
+            }
+            .bot:hover{
+                background: none;
+            }
+        }
+    }
+    .main_right{
+        position: absolute;
+        top:0;
+        right:80px;
+        width: 190px;
+        height: 420px;
+        z-index: 1;
+        background: url("/imgs/bann_bj.png") no-repeat center center;
+        .top{
+            padding: 10px 12px 0px 12px;
+            height: 173px;
+            h5{
+                text-indent:10px;
+                font-size: 14px;
+                height: 32px;
+                line-height: 32px;
+                background:url("/imgs/dian2.png") no-repeat left center;
+            }
+            a{
+                display: block;
+                color:#333;
+                line-height: 24px;
+                height: 24px;
+                font-size: 12px;
+            }
+            .a01{
+                color: #bf040f;
+                font-weight: bolder;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+        .bot{
+            display: block;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    .lunbo{
+        height: 420px;
+        position: relative;
+        z-index: 0;
+        .swiper-container{
+            position: relative;
+            width: 100%;
+            height: 420px;
+            .swiper-button-prev{
+                left:261px;
+                background: url("/imgs/next.png") no-repeat -17px -40px;
+                background-size: 461%;
+            }
+            .swiper-button-next{
+                right:272px;
+                background: url("/imgs/next.png") no-repeat -77px -40px;
+                background-size: 461%;
+            }
+            img{
+                margin-left:-350px;
+                height: 100%;
+            }
+        }
+    }
+    .type{
+        width: 1120px;
+        height: 190px;
+        margin:0 auto;
+        margin-top:40px ;
+        .type_list{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            li{
+                width: 366px;
+                height: 100%;
+                background-color: pink;
+                a{
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .banner_big{
+        display:block;
+        margin:0 auto;
+        margin-top:30px;
+        width: 1120px;
+        height: 600px;
+        background-color: orange;
+    }
+    .wrap_hot_shop{
+        width: 1120px;
+        margin:0 auto;
+        ul{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            li{
+                width: 272px;
+                height: 400px;
+                margin-right:8px;
+                margin-top:8px;
+                .li_top{
+                    display: inline-block;
+                    width: 100%;
+                    height: 290px;
+                }
+                .toggle_detail{
+                    line-height: 28px;
+                    height: 28px;
+                    width: 100%;
+                    margin-top:16px;
+                    text-align: center;
+                    font-size: 18px;
+                    display: block;
+                    color: #333;
+                }
+                .toggle_detail:hover{
+                    text-decoration: underline;
+                }
+                p{
+                    margin-top:10px;
+                    text-align: center;
+                    .price{
+                        margin-right:15px;
+                        color:#ee4727;
+                    }
+                }
+            }
+        }
+
+    }
+}
+

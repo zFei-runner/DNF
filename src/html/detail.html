@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>详情页</title>
+    <link rel="stylesheet" href="/css/detail.css">
+</head>
+<body>
+    <header id="header_container"></header>
+    <main>
+        <div class="wrap_sNav">
+            <div class="top_nav">
+                <a href="javascript:;">礼包收藏</a>
+                <a href="javascript:;">手办模型</a>
+                <a href="javascript:;">数码电子</a>
+                <a href="javascript:;">服饰日用</a>
+            </div>
+            <div id="detail_show"></div>
+            <script type="text/html" id ="detail-template">    
+                <!-- 放大镜 (该插件格式是：小图和大图都必须使用一个盒子抱起来，下面为固定格式)-->
+                <div class="left_img">
+                    <!-- 中等图片 -->
+                    <div class="top_img">
+                        <!-- <img class="zoom-img" src="{{data.imgs[0]}}" data-zoom-image="{{data.imgs[0]}}"/> -->
+                        <img class="zoom-img" src="{{data.imgs[0]}}" data-zoom-image="{{data.imgs[0]}}"/>
+                    </div>
+                    <!-- 小图列表 -->
+                    <div class="wrap_sImg" id="gal1">
+                        <ul class="view-ul">
+                            <li class="current">
+                                <a href="#" data-image="{{data.imgs[0]}}" data-zoom-image="{{data.imgs[0]}}">
+                                    <img class="s" src="{{data.imgs[0]}}" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-image="{{data.imgs[1]}}" data-zoom-image="{{data.imgs[1]}}">
+                                <img class="s" src="{{data.imgs[1]}}" /></a>
+                            </li>
+                            <li>
+                                <a href="#" data-image="{{data.imgs[2]}}" data-zoom-image="{{data.imgs[2]}}">
+                                <img class="s" src="{{data.imgs[2]}}" /></a>
+                            </li>
+                            <li>
+                                <a href="#" data-image="{{data.imgs[3]}}" data-zoom-image="{{data.imgs[3]}}">
+                                <img class="s" src="{{data.imgs[3]}}" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right_infor">
+                    <div class="wrap_shuju">
+                        <div class="title">
+                            <span class="lihe">{{data.lihe}}</span><span class="newPro"></span>
+                        </div>
+                        <div class="xiangq_yx">
+                            <div class="now">
+                                <span class="newPrice">现价</span>
+                                <span class="newPrice">￥<i class="priceNum">{{data.priceNum}}</i></span>
+                            </div>
+                        </div>
+                        <div class="xiangq_ping">
+                            <div class="left">
+                                <span class="xiaoliang">1000+</span>
+                                <br />
+                                <span>60天销量</span>
+                            </div>
+                            <div class="center">
+                                <a href="javascript:;" class="pingjia">{{data.pingjia}}</a>
+                                <br>
+                                <span>累计评价</span>
+                                <br>
+                                <span>4.9</span>
+                            </div>
+                            <div class="right">
+                                <span class="xihuan">{{data.xihuan}}</span>
+                                <br>
+                                <span>累计喜欢</span>
+                                <br>
+                                <a href="javascript:;">喜欢它</a>
+                            </div>
+                        </div>
+                        <!-- 尺码 -->
+                        <div class="chima">
+                            <span>尺码</span>
+                            <div class="junma">均码</div>
+                        </div>
+                        <!-- 数量 -->
+                        <div class="shuliang" >
+                            <span>数量</span>
+                            <div class="addCarNum" id="addToCarNum">
+                                <span id="reduceNum"></span>
+                                <input type="text" value="1" id="this_num"/>
+                                <span id="addNum"></span>
+                            </div>
+                        </div>
+                        <!-- 预计发售 -->
+                        <div class="fashou">预售商品，预计5月20号发货</div>
+                        <!-- 加入购物车、直接购买 -->
+                        <div class="addToCar" id="addAndBuy">
+                            <span class="lijigoumai" id="buyNow">立即购买</span>
+                            <span class="addCar" id="addCar">加入购物车</span>
+                        </div>
+                        <!-- 赠送 -->
+                        <div class="zengsong">赠送游戏道具/100%官方正品</div>
+                        <!-- 收藏宝贝 -->
+                        <div class="shoucang">
+                            <a href="javascript:;">收藏宝贝<span>（348位勇士收藏）</span></a>
+                        </div>
+                    </div>
+
+                </div>
+            </script>
+        </div>
+    </main>
+    <footer id="footer_container"></footer>
+    <div id="articl"></div>
+    <script src="/libs/requirejs//require.min.js" data-main="/js/detail.js"></script>
+</body>
+</html>

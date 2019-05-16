@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>QQ注册</title>
+		<link rel="stylesheet" href="/libs/swiper/css/swiper.min.css" />
+		<link rel="stylesheet" href="/css/register.css">
+		<link rel="shortcut icon" href="/imgs/logo.png" />
+	</head>
+	<body>
+		<div class="left_lunbo">
+			<a href="/html/register.html" class="qq_logo">QQ</a>
+			<!-- 轮播图 -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="/imgs/01-1.jpg" alt=""/></div>
+					<div class="swiper-slide"><img src="/imgs/01-2.jpg" alt=""/></div>
+					<div class="swiper-slide"><img src="/imgs/01-3.jpg" alt=""/></div>
+					<div class="swiper-slide"><img src="/imgs/01-4.jpg" alt=""/></div>
+				</div>
+			</div>
+		</div>
+		<div class="regist">
+			<div class="kongbai"></div>
+			<div class="wrap">
+				<div class="top">
+					<div class="toggle">
+						<div class="opinion"><a href="javascript:;">意见反馈</a></div>
+						<div class="chinese"><a href="javascript:;">简体中文</a></div>
+						<div class="email"><a href="javascript:;">邮箱账号</a></div>
+						<div class="lianghao">
+							<img src="/imgs/logo3.png" alt="">
+							<a href="javascript:;">QQ靓号</a>
+						</div>
+					</div>
+				</div>
+				<div class="wrap_register">
+					<h3 class="welcome">欢迎注册QQ</h3>
+					<div class="everyDay">每一天，乐在沟通。<a href="javascript:;">免费靓号</a></div>
+					<form action="" class="register_qq">
+						<input type="text" id="username" placeholder="昵称" autocomplete="off"/>
+						<input type="password" id="pwd" placeholder="密码" autocomplete="off">
+						<div class="tel">
+							<input type="text" class="quhao" autocomplete="off" value="+86" />
+							<input type="text" class="telNum" autocomplete="off" id="tel_number"/>
+							<p>可通过该手机号找回密码</p>
+						</div>
+						<input type="button" value="注册" autocomplete="off" class="reg_btn" id="register_btn"/>
+					</form>
+					<label class="argument" id="wrap_check">
+
+						<!-- 判断阅读规则是否被选中 -->
+						<span id="no_checked" style="display: block;"></span>
+						<span id="yes_checked" style="display: none;"></span>
+						我已阅读并同意相关服务条款和隐私政策
+					</label>
+					<i class="argument_detail_down"></i>
+				</div>
+				<div class="re_footer">Copyright © 1998-2019Tencent All Rights Reserved</div>
+			</div>
+		</div>
+		<script src="/libs/requirejs/require.min.js" data-main="/js/register.js"></script>
+	</body>
+</html>

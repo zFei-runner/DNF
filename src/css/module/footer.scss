@@ -1,0 +1,104 @@
+.bottom_fuwu{
+    height: 80px;
+    background:#dedede;
+    margin-top:60px;
+    .fuwu_detail{
+        width: 960px;
+        height: 100%;
+        // background-color: #ccc;
+        margin:0 auto;
+        li{
+            float:left;
+            height: 80px;
+            width: 208px;
+            color:#666;
+            font-size: 14px;
+            padding-left:72px;
+            h3{
+                font-size: 16px;
+                padding-top: 15px;
+                color: #282725;
+                line-height: 26px;
+            }
+        }
+        .fuwu1{
+            background: url("../../imgs/bottom.png") no-repeat -5px -246px;
+        }
+        .fuwu2{
+            background: url("../../imgs/bottom.png") no-repeat 0px 0px;
+        }
+        .fuwu3{
+            background: url("../../imgs/bottom.png") no-repeat 0px -82px;
+        }
+    }
+}
+.bottom_help{
+    height: 301px;
+    padding-top:40px;
+    .wrap_help{
+        width: 1120px;
+        margin:0 auto;
+        height: 180px;
+        border-bottom:1px solid #dedede;
+        dl{
+            float:left;
+            width: 190px;
+            dt{
+                width: 100%;
+                line-height: 30px;
+                font-size: 16px;
+                color: #000;
+                font-weight: normal;
+                span{
+                    color: #666;
+                    font-size: 12px;
+                }
+            }
+            dd{
+                font-size: 14px;
+                color: #666;
+                width: 100%;
+                a{
+                    color: #666;
+                    display: block;
+                    font-size: 14px;
+                    line-height: 28px;
+                }
+                a:hover{text-decoration: underline;}
+            }
+            .email{
+                width: 214px;
+                margin-top:10px;
+            }
+        }
+        .erweima{
+            height: 150px;
+            width: 210px;
+            margin-left:75px;
+            border-left:1px solid #dedede;
+            dt{
+                height: 124px;
+                width: 170px;
+                background: url("../../imgs/bottom.png") 38px -416px no-repeat;
+            }
+            dd{
+                font-size: 14px;
+                text-align: center;
+                color: #000;
+            }
+        }
+    }
+    .bottom_bot{
+        height: 121px;
+        .banquan{
+            width: 518px;
+            height: 54px;
+            padding-left:248px;
+            padding-top:30px;
+            margin:0 auto;
+            color:#333;
+            line-height: 18px;
+            background:url("../../imgs/bottom.png") no-repeat -8px -308px;
+        }
+    }
+}

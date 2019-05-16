@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页-DNF周边商城</title>
+    <link rel="stylesheet" href="/libs/swiper/css/swiper.css">
+    <link rel="shortcut icon" href="/imgs/favicon.ico" />
+    <link rel="stylesheet" href="/css/index.css">
+    
+</head>
+<body>
+    <header id="header_container"></header>
+    <main class="main">
+        <div class="main_left">
+            <ul class="list">
+                <li class="top">
+                    <h4><a href="javascript:;" class="top_a">礼包收藏</h4>
+                    <a href="javascript:;" class="a">典藏包</a>
+                    <a href="javascript:;" class="a">雕塑</a>
+                </li>
+                <li class="moxing">
+                    <h4><a href="javascript:;" class="moxing_a">手办模型</h4>
+                        <a href="javascript:;" class="a">手办</a>
+                    <a href="javascript:;" class="a">武器模型</a>
+                </li>
+                <li class="dianzi">
+                    <h4><a href="javascript:;" class="dianzi_a">数码电子</h4>
+                        <a href="javascript:;" class="a">手表</a>
+                    <a href="javascript:;" class="a">火机</a>
+                    <a href="javascript:;" class="a">音响</a>
+                    <a href="javascript:;" class="a">数码</a>
+                </li>
+                <li class="bot">
+                    <a href="javascript:;">领取游戏道具</a>
+                </li>
+            </ul>
+        </div>
+        <div class="main_right">
+            <div class="top">
+                <h5>周边公告</h5>
+                <a href="javascript:;" class="a01">延迟发货公告</a>
+                <a href="javascript:;" class="a02">周边商城用户体验调查</a>
+                <a href="javascript:;" class="a03">周边商城产品销售权说明</a>
+                <a href="javascript:;" class="a04">紧急：关于CDK领取系统切换</a>
+                <a href="javascript:;" class="a05">12月稀有体验服资格</a>
+            </div>
+            <a href="javascript:;" class="bot"><img src="/imgs/ad_hot13.png" alt=""></a>
+        </div>
+        <!-- 轮播图 -->
+        <div class="lunbo">   
+            <!-- swiper轮播插件 -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="javascript:;"><img src="/imgs/banner1.jpg" alt=""/></a></div>
+                    <div class="swiper-slide"><a href="javascript:;"></a><img src="/imgs/banner2.jpg" alt="" /></a></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+                <!-- 如果需要前进后退按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </div>
+        <div class="type">
+            <ul class="type_list">
+                <!-- 此处插入从接口处接入的图片,图片大小为366x190 -->
+                <li><a href="javascript:;"><img src="imgs/x20.jpg" alt=""></a></li>
+                <li><a href="javascript:;"><img src="imgs/x11.jpg" alt=""></a></li>
+                <li><a href="javascript:;"><img src="imgs/x21.jpg" alt=""></a></li>
+            </ul>
+        </div>
+        <!-- 图片大小为1120x600 -->
+        <a href="javascript:;" class="banner_big"><img src="imgs/da7.jpg" alt=""></a>
+        <div class="wrap_hot_shop">
+            <ul id="hot_shop_show"></ul>
+            <!-- 配置模板引擎 -->
+            <script type="text/html" id="list_template">
+                {{each list item}} 
+                <li>
+                    <!-- 图片大小为272x290 -->
+                    <a href="/html/detail.html?id={{item.id}}" class="li_top"><img src="{{item.images}}" alt=""></a>
+                    <a href="/html/detail.html?id={{item.id}}" class="toggle_detail">{{item.title}}</a>
+                    <p><span class="price">{{item.price}}</span><span class="like">喜欢：{{item.like}}</span></p>
+                </li> 
+                {{/each}}
+            </script>
+        </div>
+    </main>
+    <!-- 尾部详情 -->
+    <footer id="footer_container"></footer>
+    <!-- 侧边栏信息 -->
+    <div id="articl"></div>
+    <script src="/libs/requirejs/require.min.js" data-main="/js/index.js"></script>
+</body>
+</html>

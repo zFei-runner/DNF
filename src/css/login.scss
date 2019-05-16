@@ -1,0 +1,138 @@
+@import  "module/footer";
+
+*{margin:0;padding:0;font-size: 12px;}
+a{text-decoration: none;}
+ul,ol li{list-style: none;}
+body{
+    background:#eee;
+}
+.bg{
+	height: 542px;
+    background:url("/imgs/login_bg_font.jpg") no-repeat center center;
+    .qq_top{
+        margin: 0px auto;
+        width: 1004px;
+        position: relative;
+        background-color: orange;
+        .qq_menu{
+            position: absolute;
+            width: 800px;
+            top: 42px;
+            right: 0px;
+            height: 34px;
+            text-align: right;
+            a{
+                display: inline-block;
+                border: 1px solid #fff;
+                line-height: 32px;
+                padding: 0px 22px;
+                margin-left: 2px;
+                color: #fff;
+                font-size: 14px;
+                text-decoration: none;
+            }
+            a:hover{
+                background:#fff;
+                color:#333;
+            }
+        }
+
+    }
+    .login{
+        width: 621px;
+        height: 396px;
+        border: 2px solid #eee;
+        background-color: #fff;
+        position: absolute;
+        right: 0;
+        top:98px;
+        h4{
+            font-size: 20px;
+            color: #333;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            font-weight: normal;
+            margin-bottom: 16px;
+            margin-top:52px;
+        }
+        .con{
+            font-size: 16px;
+            color: #666;
+            text-align: center;
+            margin-bottom:36px;
+            a{
+                color:#3481cf;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+        .form_login{
+            width: 272px;
+            height: 150px;
+            margin:0 auto;
+            input{
+                width: 260px;
+                height: 40px;
+                border:1px solid #ccc;
+                padding-left:10px;
+                border-radius: 4px;
+            }
+            input:nth-child(2){
+                margin-top:13px;
+                margin-bottom:13px;
+            }
+            .login_btn{
+                border:none;
+                outline: none;
+                font-size: 17px;color:#fff;
+                width: 100%;
+                height: 40px;
+                cursor:pointer;
+                background: #86ce2f;
+            }
+        }
+        .other{
+            height: 16px;
+            margin-bottom: 8px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            text-align: right;
+            font-size: 12px;
+            span{
+                color: #bfbfbf;
+                margin: 0 5px;
+            }
+            a{
+                color: #666;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            .opinion{
+                margin-right:10px;
+            }
+        }
+    }
+
+}
+.jiange{
+	height: 32px;
+	
+}
+.bottom_fuwu{
+    margin-top:0;
+}
+.bottom_help{
+    height: auto;
+    
+}
+.bottom_help .wrap_help{
+    display: none;
+}
+.bottom_help .bottom_bot {
+    background: #fff;
+    margin-bottom: 20px;
+}
