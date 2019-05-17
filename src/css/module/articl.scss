@@ -26,6 +26,17 @@
     .ren:hover{
         background-position-x: -72px;
     }
+    .ren_notice{
+        display: none;
+        position: absolute;
+        left: -153px;
+        top: 0px;
+        background: #ccc;
+        border: 1px solid #202020;
+        border-right: 0px;
+        width: 152px;
+        height: 319px;
+    }
     .key{
         width: 46px;
         height: 47px;
@@ -33,6 +44,17 @@
     }
     .key:hover{
         background-position-x: -72px;
+    }
+    .key_notice{
+        display: none;
+        position: absolute;
+        left: -153px;
+        top: 45px;
+        background: #ccc;
+        border: 1px solid #202020;
+        border-right: 0px;
+        width: 152px;
+        height: 319px;
     }
     .shopCar{
         width: 46px;
@@ -61,6 +83,18 @@
     }
     .qqkefu:hover{
         background-position-x: -72px;
+    }
+    .qqkefu_notice{
+        position: absolute;
+        width: 100px;
+        height: 80px;
+        padding-top: 16px;
+        left: -101px;
+        top: 223px;
+        background: #ccc;
+        border: 1px solid #202020;
+        border-right: 0px;
+        display: none;
     }
 }
 .return_top{

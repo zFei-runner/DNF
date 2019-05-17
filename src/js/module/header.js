@@ -2,12 +2,6 @@ define(["jquery","cookie"],($)=>{
     class Header{
         constructor () {
             this.container = $("#header_container");
-            // this.init().then(()=>{
-            //     this.obj();
-            //     this.bindEvent();
-            //     this.shop_detail();
-            //     this.isLogin();
-            // });
         }
         isLogin () {
             this.user = $("#user");
@@ -41,17 +35,33 @@ define(["jquery","cookie"],($)=>{
             this.list=$("#top_in_detail");
             this.search_text = $("#search_text");
             this.search_btn = $("#search_btn");
+            this.search = $(".search_con");
+            this.search_ul = $("#search_list");
         }
         bindEvent () {
+            let _this = this;
             this.search_text.on("keyup",function (){
                 let keyWords = $(this).val();
                 // 带着关键字去从百度接口请求与关键字相关的信息
                 $.getJSON("https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?cb=?&wd="+keyWords,(data)=>{
-                    console.log(data)
+                    _this.render_li(data.s);
                 });
+            })
+            this.search_ul.on("click","li",function () {
+                _this.search.val(this.innerHTML);
+                _this.search_ul.hide();
             })
 
 
+        }
+        //渲染
+        render_li (arr) {
+            this.search_ul.show();
+            let str="";
+            arr.forEach((ele)=>{
+                str+="<li>"+ele+"</li>";
+            })
+            this.search_ul.html(str);
         }
         //人气周边商城详情事件
         shop_detail () {

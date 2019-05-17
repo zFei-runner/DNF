@@ -105,6 +105,7 @@ ul,ol li{list-style: none;}
         }
         .search{
             float: left;
+            position: relative;
             margin-left:120px;
             margin-top:38px;
             form{
@@ -120,7 +121,9 @@ ul,ol li{list-style: none;}
                     line-height: 44px;
                     border:1px solid #e00011;
                     border-right:none;
+                    outline: none;
                 }
+                
                 .button{
                     float:left;
                     height: 38px;
@@ -129,6 +132,24 @@ ul,ol li{list-style: none;}
                     outline: none;
                     cursor:pointer;
                     background:#e00011 url("../../imgs/menu.png") no-repeat -10px -17px;
+                }
+            }
+            #search_list{
+                position: absolute;
+                z-index: 2;
+                top:38px;
+                width:286px;
+                background: #fff;
+                li{
+                    height: 30px;
+                    font-size: 14px;
+                    text-indent:15px;
+                    text-align: left;
+                    line-height: 30px;
+                }
+                li:hover{
+                    text-decoration: underline;
+                    cursor:default;
                 }
             }
             .s_Nav a{
